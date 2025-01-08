@@ -90,9 +90,6 @@ const App = () => {
     })
   }
 
-
-
-
   /////////////////////////////////////برای حذف کردن/////////////////////////////////////////////////
   const removeContact = async (contactId) => {
     // Contacts Copy
@@ -116,6 +113,7 @@ const App = () => {
     }
   };
   ///////////////////////////////search//////////////////////////////////////////////////////////////////////////
+  //use debounce with lodash
   const contactSearch = _.debounce(
     (query) => {
       if (!query) return setFilteredContacts([...contacts]);
