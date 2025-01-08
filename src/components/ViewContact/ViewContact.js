@@ -56,7 +56,7 @@ const ViewContact = () => {
                         {Object.keys(contact).length > 0 && (
                             <section className="view-contact mt-e">
                                 <div
-                                    className="container p-2 bg-deracula-CURRENTLINE"
+                                    className="container p-2 m-auto bg-deracula-CURRENTLINE"
                                     style={{ borderRadius: "1em" }}
                                 >
                                     <div className="row align-items-center">
@@ -68,22 +68,22 @@ const ViewContact = () => {
                                             />
                                         </div>
                                         <div className="col-md-9">
-                                            <ul className="list-group mb-5">
-                                                <li className="list-group-item list-group-item-dark">
+                                            <ul className="list-group mb-5 text-deracula-FOREGROUND">
+                                                <li className="list-group-item pb-1 list-group-item-dark">
                                                     نام و نام خانوادگی :{" "}
                                                     <span className="fw-bold">{contact.fullname}</span>
                                                 </li>
-                                                <li className="list-group-item list-group-item-dark">
+                                                <li className="list-group-item pb-1 list-group-item-dark">
                                                     شماره موبایل :{" "}
                                                     <span className="fw-bold">{contact.mobile}</span>
                                                 </li>
-                                                <li className="list-group-item list-group-item-dark">
+                                                <li className="list-group-item pb-1 list-group-item-dark">
                                                     ایمیل : <span className="fw-bold">{contact.email}</span>
                                                 </li>
-                                                <li className="list-group-item list-group-item-dark">
+                                                <li className="list-group-item pb-1 list-group-item-dark">
                                                     شغل : <span className="fw-bold">{contact.job}</span>
                                                 </li>
-                                                <li className="list-group-item list-group-item-dark">
+                                                <li className="list-group-item pb-1 list-group-item-dark">
                                                     گروه : <span className="fw-bold">{group.name}</span>
                                                 </li>
                                             </ul>

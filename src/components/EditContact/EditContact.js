@@ -75,7 +75,7 @@ const EditContact = () => {
     <>
       {loading ? (<Spinner />) : (
         <>
-          <section className="p-3">
+          <section className="p-3 flex flex-col justify-center items-center">
             <div className="container">
               <div className="row my-2">
                 <div className="col text-center">
@@ -214,7 +214,7 @@ const EditContact = () => {
               </div>
             </div>
 
-            <div className="text-center mt-1">
+            <div className="text-center mt-5">
               <img
                 src={require("../../assets/man-taking-note.png")}
                 height="300px"
