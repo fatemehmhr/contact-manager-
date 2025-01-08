@@ -10,9 +10,9 @@ import { contactSchema } from "../../validations/contactValidation";
 import { getContact, updateContact } from "../../services/contactServices";
 import { ContactContext } from "../../context/contactContext";
 
-import {useImmer} from 'use-immer';
+import { useImmer } from 'use-immer';
 
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 
 
 
@@ -55,12 +55,12 @@ const EditContact = () => {
         toast.info("مخاطب با موفقیت ویرایش گردید.");
         setLoading(false);
         setContacts(draft => {
-          const contactIndex = draft.findIndex((c) => c.id === parseInt(contactId) );
-          draft[contactIndex] = {...data}
+          const contactIndex = draft.findIndex((c) => c.id === parseInt(contactId));
+          draft[contactIndex] = { ...data }
         });
         setFilteredContacts(draft => {
-          const contactIndex = draft.findIndex((c) => c.id === parseInt(contactId) );
-          draft[contactIndex] = {...data}
+          const contactIndex = draft.findIndex((c) => c.id === parseInt(contactId));
+          draft[contactIndex] = { ...data }
         });
         navigate("/contacts");
 
@@ -70,11 +70,6 @@ const EditContact = () => {
       setLoading(false);
     }
   };
-
-
-
-
-
 
   return (
     <>
@@ -215,7 +210,7 @@ const EditContact = () => {
                     </Form>
                   </Formik>
                 </div>
-                
+
               </div>
             </div>
 

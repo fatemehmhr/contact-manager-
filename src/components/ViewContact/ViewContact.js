@@ -8,8 +8,8 @@ const ViewContact = () => {
 
     const { contactId } = useParams();
 
-    console.log(contactId);
-    //////////////////// همه را درون یک استیت پیاده کردیم که مناسب نیست و حنما باید ...state را بگداریم////////////////////////////////////
+    // console.log(contactId);
+
     const [state, setState] = useState({
         contact: {},
         group: {}
