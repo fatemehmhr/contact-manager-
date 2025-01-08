@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Contact = ({contact,deleteContact}) => {
     return(
         <>
-            <section className="w-5/12 h-44 mr-3 my-6 p-2 flex  items-center bg-deracula-CURRENTLINE rounded-sm">
+            <section className="w-full h-44 mr-3 my-6 p-2 flex  items-center bg-deracula-CURRENTLINE rounded-sm lg:w-10/12 xl:w-5/12  ">
                 <div className="flex-grow-0 w-1/3 h-full ">
                     <img  src={contact.photo} alt={contact.fullname} className="border border-deracula-PINK rounded-sm h-full  "/>
                 </div>

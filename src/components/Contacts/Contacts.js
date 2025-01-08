@@ -21,8 +21,8 @@ const Contacts = () => {
             </section>
             {
                 loading ? <Spinner /> : (
-                <section className='flex flex-wrap items-center mt-10 m-auto w-11/12'>
-                    <div className='flex flex-wrap items-center mx-5 justify-center mt-10 w-full '>
+                <section className='flex flex-wrap items-center mt-10 m-auto w-11/12 '>
+                    <div className='flex flex-wrap items-center mx-5 justify-center mt-10 w-full  '>
                     {
                          filteredContacts.length > 0 ? filteredContacts.map((c) => (
                             <Contact key={c.id} contact={c} deleteContact={() => deleteContact(c.id,c.fullname)} /> )) : (

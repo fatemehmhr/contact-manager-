@@ -21,8 +21,8 @@ const AddContact = () => {
                             <p className="p-5 text-2xl font-extrabold text-deracula-GREEN" >ساخت مخاطب جدید</p>
                             <hr className="border-deracula-GREEN" />
                         </div>
-                        <div className="flex justify-between mt-10  ">
-                            <div className=" w-1/3 mr-16">
+                        <div className="flex flex-col justify-between mt-10 mx-5 lg:flex-row ">
+                            <div className="w-full lg:mr-16 ">
                                 <Formik
                                     initialValues={{
                                         fullname: '',
@@ -130,7 +130,7 @@ const AddContact = () => {
                                             />
 
                                         </div>
-                                        <div>
+                                        <div className="mt-5">
                                             <input
                                                 type="submit"
                                                 value="ساخت مخاطب"
@@ -146,7 +146,7 @@ const AddContact = () => {
                                 </Formik>
                             </div>
                             <div>
-                                <img src={man} className="opacity-50 w-10/12" />
+                                <img src={man} className="opacity-50 m-10 lg:w-10/12" />
                             </div>
                         </div>
 
